@@ -4,13 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./styles/styles.css" />
     <!--Con link se pueden agregar: archivos css, de javascript, imagenes, iconos, etc-->
     <!--Como buena practica los iconos deben estar en formato ico-->
     <link rel="shortcut icon" href="./media/perro.ico" type="image/x-icon"/>
     <title>Razas de perros</title>
 </head>
 <body>
-    <header></header> 
+    <header>
+        <ul class="navbar">
+            <li>Logo</li>
+            <li>Nuevo Post</li>
+            <li>Busqueda</li>
+            <li>Iniciar Sesion</li>
+            <li>Registro</li>
+        </ul>
+    </header>
     <main>
         <section>Fotos Perros</section>
         <section>Tabla</section>
@@ -32,7 +41,8 @@ alli se selecionan closed (cerrados), posteriormente se selecciona el branch aso
 request cerrado que se desea eliminar y se da click en el boton delete branch -->
 
 <!--Si se quiere ver los commits de un branch particular, nos paramos en esta rama, y seleccionamos
-el boton "n commits" en la parte superior derecha de la tabla, lo cual, nos muestra los commits esta rama-->
+el boton "n commits" en la parte superior derecha de la tabla, lo cual, nos muestra los commits de esta rama-->
+
 
 <!--Es muy importante poner el numero de indice a cada tarea (rama) que se crea en github
 Puesto que crear layout es una tarea que no depende de ninguna otra, esta se crea desde
@@ -49,4 +59,7 @@ rama madre, para posteriormente hacerlo. Para ello vamos a pull requests, damos 
 New Pull Request, en base se selecciona sprint1 y donde dice compare se selecciona el
 branch que se quiere fusionar (2-titulo-y-favicon), hacemos click en create pull request,
 posteriormente, damos nuevamente click en create pull request. En este punto se puede
-asignar el pull request o su revision a una persona en especifico del equipo-->
+asignar el pull request o su revision a una persona en especifico del equipo. Posteriormente
+se hace el merge con sprint1 y se elimina el branch de la tarea-->
+
+<!--Antes de hacer un git add . debemos recordar guardar los cambios en los archivos (Ctrl s)-->

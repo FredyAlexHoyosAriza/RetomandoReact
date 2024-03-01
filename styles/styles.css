@@ -1,0 +1,14 @@
+ul {
+    list-style: none; /*Se suprimen estilos de lista de los ul; viñetas (bullets) desaparecen */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 0px;
+}
+
+body {
+    margin: 0px;
+}
