@@ -12,3 +12,22 @@ ul {
 body {
     margin: 0px;
 }
+
+.mainButton {
+    background-color: #1bb76e;
+    color: white;
+    /*cursor: pointer; Se cambia el cursor de flecha por uno de manito */
+    Border: 0.1em;
+    padding: 5px 10px;
+    border-radius: 4px; /*Redondea los bordes de este boton */
+    font-weight: bolder; /*Negrita */
+    box-shadow: 0.1em 0.1em 0.05em darkcyan; /*Inserta una sombra: https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow */
+}
+
+/*MODIFICADORES DE CLASE */
+.mainButton:hover { /*Los elementos con esta clase cambian cuando el cursor les pasa por encima  */
+    cursor: pointer; /*El cursor se vuelve manito al pasar sobre el elemento */
+    box-shadow: 0.3em 0.3em 0.1em darkcyan; /*La sombra crece un poco*/
+    transform: scale(1.1); /*El tamaño crece al 110%*/
+
+}
