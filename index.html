@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <!--Con link se pueden agregar: archivos css, de javascript, imagenes, iconos, etc-->
+    <!--Como buena practica los iconos deben estar en formato ico-->
+    <link rel="shortcut icon" href="./media/perro.ico" type="image/x-icon"/>
+    <script src="https://kit.fontawesome.com/cb32582639.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/cb32582639.js" crossorigin="anonymous"></script>
+    <title>Razas de perros</title>
+</head>
+<body>
+    <header>
+        <ul class="navbar">
+            <li>
+                <img src="./media/perro.png" alt="Logo de un perro" class="logo"/>
+            </li>
+            <li><button class="button mainButton">Nuevo Post</button></li>
+            <li>
+                <div class="buscar">
+                    <i class="fas fa-search"></i>
+                    <input placeholder="Buscar Raza"/>
+                </div>
+            </li>
+            <li><button class="button secondaryButton">Login</button></li>
+            <li><button class="button mainButton">Registro</button></li>
+        </ul>
+    </header>
+    <main>
+        <section><!--Fotos Perros--></section>
+        <section><!--Tabla--></section>
+    </main>
+    <footer></footer>
+    
+</body>
+</html>
+
+<!--Hasta este punto ya tenemos una tarea completada, lo que sigue es hacer un merge con la sprint1
+en el repositorio local o realizar un pull request en github-->
+
+<!--Crear el layout no dependia de otras tareas, sin embargo, las tareas crear header
+y agregar titulo y favicon con tareas independientes entre si que dependen de que el layout este creado-->
+
+<!--Luego de que una tarea ha sido finalizada se tiene la opcion de eliminar el branch de
+esta tarea si se desea; para ello, en github por ejemplo, se va inicialmente a pull requests, y
+alli se selecionan closed (cerrados), posteriormente se selecciona el branch asociado al pull
+request cerrado que se desea eliminar y se da click en el boton delete branch -->
+
+<!--Si se quiere ver los commits de un branch particular, nos paramos en esta rama, y seleccionamos
+el boton "n commits" en la parte superior derecha de la tabla, lo cual, nos muestra los commits de esta rama-->
+
+
+<!--Es muy importante poner el numero de indice a cada tarea (rama) que se crea en github
+Puesto que crear layout es una tarea que no depende de ninguna otra, esta se crea desde
+la rama main y cuando este completa se fuciona con la rama sprint1. Puesto que para
+crear titulo y favicon se requiere que el layout este creado esta tarea debe descender de
+la rama sprint1 (con el layout), de la misma manera la tarea crear estructura de header
+debe ser un branc que desciende de la rama sprint1-->
+
+<!--El favicon es el icono que aparece al lado del titulo de la pagina sobre la barra de
+direcciones del navegador-->
+
+<!--Tambien se puede indicar si se desea hacer un pull request de una rama hija hacia una
+rama madre, para posteriormente hacerlo. Para ello vamos a pull requests, damos click en
+New Pull Request, en base se selecciona sprint1 y donde dice compare se selecciona el
+branch que se quiere fusionar (2-titulo-y-favicon), hacemos click en create pull request,
+posteriormente, damos nuevamente click en create pull request. En este punto se puede
+asignar el pull request o su revision a una persona en especifico del equipo. Posteriormente
+se hace el merge con sprint1 y se elimina el branch de la tarea-->
+
+<!--Antes de hacer un git add . debemos recordar guardar los cambios en los archivos (Ctrl s)-->
+
+<!--Para la rama 7-crear-boton-registro se requiere el codigo creado en la rama 5-crear-boton-nuevo-post
+por ello, puesto que la rama 5 ya hizo un push hacia github, desde la rama 7 local hacemos un pull
+request de la rama 5 en github, lo cual conlleva un merge de la rama 7 local con la rama 5 remota;
+nuestro git siempre verificara que no hayan conflictos antes de un merge-->
+
+<!--No es una buena practica duplicar codigo-->
