@@ -2,7 +2,7 @@ ul {
     list-style: none; /*Se suprimen estilos de lista de los ul; viñetas (bullets) desaparecen */
 }
 
-.navbar { /*Podria tambien haberse hecho usando un grid con una fila y 5 columnas */
+.navbar { /*Podria tambien haberse hecho usando un grid con una fila y 5 columnas */ /*Podria tambien haberse hecho usando un grid con una fila y 5 columnas */
     display: flex;
     justify-content: space-between;
     padding: 20px;
@@ -52,4 +52,20 @@ siendo esto una buena practica que nos permite actualizar el codigo de forma sen
 /*MODIFICADORES DE CLASE */
 .secondaryButton:hover { /*Los elementos con esta clase cambian cuando el cursor les pasa por encima  */
     box-shadow: 0.3em 0.3em 0.1em rgb(13, 72, 109); /*La sombra crece un poco*/
+}
+
+.buscar {
+    background-color: white;
+    border: 0.1em solid gray;
+    padding: 0.2em;
+    border-radius: 0.3em;
+}
+
+.buscar:focus-within {
+    border: 0.13em solid blue;
+}
+
+.buscar > input {
+    border: 0; /*Cuadro de texto sin borde */
+    outline: none; /*Cuando el cursor este sobre el cuadro de texto no se vera el contorno */
 }
