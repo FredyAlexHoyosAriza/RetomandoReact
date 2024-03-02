@@ -2,7 +2,7 @@ ul {
     list-style: none; /*Se suprimen estilos de lista de los ul; viñetas (bullets) desaparecen */
 }
 
-.navbar {
+.navbar { /*Podria tambien haberse hecho usando un grid con una fila y 5 columnas */
     display: flex;
     justify-content: space-between;
     padding: 20px;
