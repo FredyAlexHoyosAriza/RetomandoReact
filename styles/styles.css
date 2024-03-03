@@ -85,16 +85,30 @@ siendo esto una buena practica que nos permite actualizar el codigo de forma sen
     width: 20em;
 }
 
-/* .imgSize {
+.imgSize {
     height: 10em;
-} */
-
-.imgContainer {
-    height: 10em;
-    display: flex;
+    width: 10em;
 }
 
-.imgContainer > img {
-    /* height: 10em; */
-    object-fit: cover;
+.imgContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5vw;
+}
+
+/* .imgContainer > img {
+    /* height: 10em;
+    object-fit:cover;
+    width: 100%; /*La imagen debe ajustarse al 100% del tamaño del padre
+} */
+
+.imgContainer > label {
+    text-align: center;
+}
+
+.breedCardContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 1vw;
 }
