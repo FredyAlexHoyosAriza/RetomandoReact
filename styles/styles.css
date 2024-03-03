@@ -84,3 +84,17 @@ siendo esto una buena practica que nos permite actualizar el codigo de forma sen
     outline: none; /*Cuando el cursor este sobre el cuadro de texto no se vera el contorno */
     width: 20em;
 }
+
+/* .imgSize {
+    height: 10em;
+} */
+
+.imgContainer {
+    height: 10em;
+    display: flex;
+}
+
+.imgContainer > img {
+    /* height: 10em; */
+    object-fit: cover;
+}
