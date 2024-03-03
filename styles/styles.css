@@ -7,14 +7,23 @@ ul {
     justify-content: space-between;
     padding: 20px;
     margin: 0px;
+    background-color: #d7eaf6;
+    border-bottom: 0.1em solid rgb(154, 196, 250);
+    box-shadow: 0.2em 0 0.1em rgb(154, 196, 250);
+    align-items: center;
 }
+
+/* .navbar > li {
+    display: flex;
+    align-items: center;
+} */
 
 body {
     margin: 0px;
 }
 
 .logo {
-    height: 70px;
+    height: 40px;
 }
 
 /*A continuacion .button y .button:hover son una especie de factor comun de estilos,
@@ -29,7 +38,7 @@ siendo esto una buena practica que nos permite actualizar el codigo de forma sen
 }
 
 /*MODIFICADORES DE CLASE */
-.button:hover { /*Los elementos con esta clase cambian cuando el cursor les pasa por encima  */
+.navelem:hover { /*Los elementos con esta clase cambian cuando el cursor les pasa por encima  */
     cursor: pointer; /*El cursor se vuelve manito al pasar sobre el elemento */
     transform: scale(1.1); /*El tamaño crece al 110%*/
 }
@@ -63,9 +72,15 @@ siendo esto una buena practica que nos permite actualizar el codigo de forma sen
 
 .buscar:focus-within {
     border: 0.13em solid blue;
+    transform: scale(1.1); /*El tamaño crece al 110%*/
+}
+
+.buscar:hover {
+    box-shadow: 0.3em 0.3em 0.1em rgb(214, 224, 231); /*La sombra crece un poco*/
 }
 
 .buscar > input {
     border: 0; /*Cuadro de texto sin borde */
     outline: none; /*Cuando el cursor este sobre el cuadro de texto no se vera el contorno */
+    width: 20em;
 }
