@@ -118,17 +118,40 @@ siendo esto una buena practica que nos permite actualizar el codigo de forma sen
     margin-bottom: 0.2em;
 }
 
-.imgContainer > label {
+.imgContainer > div {
     text-align: center;
     background-color: #023f23;
     color: white;
     font-weight: bold;
-    font-size: large;
     width: 100%;
+    padding-top: 0.3em;
+}
+
+.imgContainer > div > label {
+    font-size: large;
+    margin-left: 0.3em;
+    margin-right: 0.3em;
 }
 
 .breedCardContainer {
     display: flex;
     flex-direction: row;
     padding: 1vw;
+}
+
+.interaction {
+    display: flex;
+    padding: 0;
+    margin-top: 1em;
+    margin-bottom: 0.3em;
+    font-size:small;
+    font-weight: bold;
+    justify-content: space-around;
+}
+
+.interaction > li {
+    display: flex;
+    align-items: center;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
 }
