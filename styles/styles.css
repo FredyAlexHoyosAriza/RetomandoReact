@@ -154,3 +154,10 @@ siendo esto una buena practica que nos permite actualizar el codigo de forma sen
     margin-left: 0.2em;
     margin-right: 0.2em;
 }
+
+.titulo {
+    text-align: center;
+    color: #023f23;
+    font-weight: bold;
+    font-size: xx-large;
+}
