@@ -2,11 +2,14 @@ ul {
     list-style: none; /*Se suprimen estilos de lista de los ul; viñetas (bullets) desaparecen */
 }
 
+header {
+    width: 100%;
+}
 .navbar { /*Podria tambien haberse hecho usando un grid con una fila y 5 columnas */ /*Podria tambien haberse hecho usando un grid con una fila y 5 columnas */
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    margin: 0px;
+    padding: 2%;
+    margin: 0;
     background-color: #d7eaf6;
     border-bottom: 0.1em solid rgb(154, 196, 250);
     box-shadow: 0.2em 0 0.1em rgb(154, 196, 250);
@@ -83,4 +86,78 @@ siendo esto una buena practica que nos permite actualizar el codigo de forma sen
     border: 0; /*Cuadro de texto sin borde */
     outline: none; /*Cuando el cursor este sobre el cuadro de texto no se vera el contorno */
     width: 20em;
+}
+
+.imgSize {
+    height: 10em;
+    width: 10em;
+}
+
+.imgContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5vw;
+    border: 0.1em solid #1bb76e;
+    box-shadow: 0.1em 0.2em 0.1em #1bb76e;
+    border-radius: 5%;
+}
+
+.imgContainer:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    /*border:0.1em solid #1bb76e;*/
+    border-radius: 0%;
+}
+
+.imgContainer > img {
+    /* height: 10em;
+    object-fit:cover;
+    width: 100%; /*La imagen debe ajustarse al 100% del tamaño del padre */
+    border-radius: 2em;
+    margin-bottom: 0.2em;
+}
+
+.imgContainer > div {
+    text-align: center;
+    background-color: #023f23;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    padding-top: 0.3em;
+}
+
+.imgContainer > div > label {
+    font-size: large;
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+}
+
+.breedCardContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 1vw;
+}
+
+.interaction {
+    display: flex;
+    padding: 0;
+    margin-top: 1em;
+    margin-bottom: 0.3em;
+    font-size:small;
+    justify-content: space-around;
+}
+
+.interaction > li {
+    display: flex;
+    align-items: center;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+}
+
+.titulo {
+    text-align: center;
+    color: #023f23;
+    font-weight: bold;
+    font-size: xx-large;
 }
