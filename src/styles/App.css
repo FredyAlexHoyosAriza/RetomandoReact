@@ -81,7 +81,7 @@ body {
   width: 10em;
 }
 
-.imgContainer {
+.breedContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,18 +91,18 @@ body {
   border-radius: 5%;
 }
 
-.imgContainer:hover {
+.breedContainer:hover {
   cursor: pointer;
   transform: scale(1.1);
   border-radius: 0%;
 }
 
-.imgContainer > img {
+.breedContainer > img {
   border-radius: 2em;
   margin-bottom: 0.2em;
 }
 
-.imgContainer > div {
+.breedContainer > div {
   text-align: center;
   background-color: #023f23;
   color: white;
@@ -111,7 +111,7 @@ body {
   padding-top: 0.3em;
 }
 
-.imgContainer > div > label {
+.breedContainer > div > label {
   font-size: large;
   margin-left: 0.3em;
   margin-right: 0.3em;
