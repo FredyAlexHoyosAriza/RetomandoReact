@@ -2,6 +2,7 @@ import './styles/App.css';
 import borderCollie from "./media/Border_Collie.jpg"
 import pastorBelgaMalinois from "./media/pastor-belga-malinois_530_0_600.jpg"
 import logoPerro from "./media/perro.png"
+import DogBreedCard from "./components/DogBreedCard"
 
 function App() {
     return (
@@ -36,22 +37,6 @@ function App() {
             </main>
             <footer></footer>
         </div>
-    );
-}
-
-function DogBreedCard({Breed, DogImg, DogImgAltMsg, likes1, comments, views}) {
-    return (
-        <li className="breedContainer">
-            <img className="imgSize" src={DogImg} alt={DogImgAltMsg} name={Breed} />
-            <div>
-                <label>{Breed}</label>
-                <ul className="interaction">
-                    <li><i className="fa fa-heart"></i><span>{likes1}</span></li>
-                    <li><i className="fa fa-comment"></i><span>{comments}</span></li>
-                    <li><i className="fa fa-eye"></i><span>{views}</span></li>
-                </ul>
-            </div>
-        </li>
     );
 }
 
