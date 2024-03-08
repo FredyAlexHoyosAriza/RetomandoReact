@@ -1,43 +1,52 @@
 import './styles/App.css';
-import borderCollie from "./media/Border_Collie.jpg"
-import pastorBelgaMalinois from "./media/pastor-belga-malinois_530_0_600.jpg"
-import logoPerro from "./media/perro.png"
-import DogBreedCard from "./components/DogBreedCard"
+import Index from './pages/Index';
+import PastorBelga from './pages/PastorBelga';
+import BorderCollie from './pages/BorderCollie';
 
-function App() {
+import React from "react";
+import {
+    BrowserRouter as Router,
+    Routes,
+    Route,
+    Link
+} from "react-router-dom";
+
+export default function App() {
     return (
-        <div className="App">
-            <header>
-                <ul className="navbar">
-                    <li className="navelem">
-                        <img src={logoPerro} alt="Logo de un perro" className="logo" />
-                    </li>
-                    <li><button className="button mainButton navelem">Nuevo Post</button></li>
-                    <li>
-                        <div className="buscar navelem">
-                            <input placeholder="Buscar Raza" />
-                            <i className="fas fa-search"></i>
-                        </div>
-                    </li>
-                    <li><button className="button secondaryButton navelem">Login</button></li>
-                    <li><button className="button mainButton navelem">Registro</button></li>
-                </ul>
-            </header>
-            <main>
-                <section>
-                    <h1 className="titulo">Razas de Perros</h1>
-                    <ul className="breedCardContainer">
-                    <DogBreedCard Breed="Border Collie" DogImg={borderCollie} DogImgAltMsg="Imagen Border Collie" likes={150} comments="1.5k" views={120} />
-                        <DogBreedCard Breed="Pastor Belga Malinois" DogImg={pastorBelgaMalinois} DogImgAltMsg="Imagen Pastor Belga Malinois" likes={450} comments="1.1k" views={850} />
-                        <DogBreedCard Breed="Border Collie" DogImg={borderCollie} DogImgAltMsg="Imagen Border Collie" likes={150} comments="1.5k" views={120} />
-                        <DogBreedCard Breed="Pastor Belga Malinois" DogImg={pastorBelgaMalinois} DogImgAltMsg="Imagen Pastor Belga Malinois" likes={450} comments="1.1k" views={850} />
-
+        <Router>
+            {/*Una etiqueta tipo anchor (<a>) hace una peticion al servidor para cargar
+            una nueva pagina, por lo cual hay un tiempo de espera, mientras el servidor
+            responde y entrega la nueva pagina; las etiquetas Link de react-router-dom
+            lo que hacen es cambiar internamente el html de la pagina web, de esta forma
+            se evita la redireccion producto de la peticion al servidor con el tiempo de
+            espera que implica una respuesta. Todo lo que hay detras de una aplicacion
+            React funciona dentro de un mismo div o la que sea la etiqueta mas externa,
+            es decir, que el codigo para el cambia de vista ya se encuentra en la app y
+            se muestra segun el route actual. Este concepto se conoce como: single page
+            application */}
+            <div>
+                <nav>
+                    <ul>
+                        <li>
+                            <Link to="/">Index</Link>
+                        </li>
+                        <li>
+                            <Link to="/pastor_belga">Pastor Belga Malinois</Link>
+                        </li>
+                        <li>
+                            <Link to="/border_collie">Border Collie</Link>
+                        </li>
                     </ul>
-                </section>
-            </main>
-            <footer></footer>
-        </div>
+                </nav>
+                {/* A <Switch> looks through its children <Route>s and
+              renders the first one that matches the current URL.
+              Por convencion la ruta raiz va ultima en Routes */}
+                <Routes>
+                    <Route path="/border_collie" element={<BorderCollie/>} />
+                    <Route path="/pastor_belga" element={<PastorBelga/>} />
+                    <Route path="/" element={<Index/>} />
+                </Routes>
+            </div>
+        </Router>
     );
 }
-
-export default App;

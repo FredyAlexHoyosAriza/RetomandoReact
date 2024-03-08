@@ -81,7 +81,7 @@ body {
   width: 10em;
 }
 
-.breedContainer {
+.breedCard {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,18 +91,18 @@ body {
   border-radius: 5%;
 }
 
-.breedContainer:hover {
+.breedCard:hover {
   cursor: pointer;
   transform: scale(1.1);
   border-radius: 0%;
 }
 
-.breedContainer > img {
+.breedCard > img {
   border-radius: 2em;
   margin-bottom: 0.2em;
 }
 
-.breedContainer > div {
+.breedCard > div {
   text-align: center;
   background-color: #023f23;
   color: white;
@@ -111,7 +111,7 @@ body {
   padding-top: 0.3em;
 }
 
-.breedContainer > div > label {
+.breedCard > div > label {
   font-size: large;
   margin-left: 0.3em;
   margin-right: 0.3em;

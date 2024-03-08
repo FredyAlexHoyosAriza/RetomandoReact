@@ -9,6 +9,7 @@
     }
 }
 
+// Permite que tambien funcione con build
 // Esta es una opcion que nos presenta VSCode y la cual provoca que nuestro proyecto React
 // Nos muestre las rutas de todos los componentes y pages que se importan internamente en
 // el proyecto se muestren siempre en terminos de rutas absolutas con respecto a la carpeta
