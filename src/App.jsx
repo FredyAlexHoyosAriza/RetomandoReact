@@ -10,6 +10,7 @@ import {
     Route,
     Link
 } from "react-router-dom";
+import Layout from './layouts/Layout';
 
 export default function App() {
     return (
@@ -38,14 +39,20 @@ export default function App() {
                         </li>
                     </ul>
                 </nav>
-                {/* A <Switch> looks through its children <Route>s and
-              renders the first one that matches the current URL.
-              Por convencion la ruta raiz va ultima en Routes */}
-                <Routes>
-                    <Route path="/border_collie" element={<BorderCollie/>} />
-                    <Route path="/pastor_belga" element={<PastorBelga/>} />
-                    <Route path="/" element={<Index/>} />
-                </Routes>
+                {/*Todas las rutas con este mismo Layout se factorizan asi;
+                dependiendo de la ruta actual se muestra la pagina correspondiente
+                siempre, pero todas las paginas enmarcadas con el mismo Layout.
+                Layout no debe estar dentro de las etiquetas Routes ya que el
+                router dom podria haber ambiguedad en las rutas e interpretarse
+                que quiza deba aplicarse mas de una ruta a la vez */}
+                <Layout>
+                    <Routes>
+                        <Route path="/border_collie" element={<BorderCollie />} />
+                        <Route path="/pastor_belga" element={<PastorBelga />} />
+                        {/*Por convencion la ruta raiz va ultima en Routes */}
+                        <Route path="/" element={<Index />} />
+                    </Routes>
+                </Layout>
             </div>
         </Router>
     );
