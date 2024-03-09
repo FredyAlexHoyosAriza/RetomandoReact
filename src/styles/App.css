@@ -149,3 +149,18 @@ body {
 .fa-heart {
   color: red;
 }
+
+.uniforme {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  height: 100vh;
+}
+
+.uniforme > main {
+  height: 100vh;
+}
+
+.uniforme > footer {
+  background-color: #1bb76e;
+}
