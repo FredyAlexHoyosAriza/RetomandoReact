@@ -119,7 +119,8 @@ body {
 
 .breedCardContainer {
   display: flex;
-  flex-direction: row;
+  flex-wrap:wrap; /*Cuando el contenido no cabe en el ancho de la pagina, entonces el
+  siguiente contenido baja a la proxima fila. Este estilo elimnaria un scroll horizontal */
   padding: 1vw;
 }
 
@@ -153,12 +154,13 @@ body {
 .uniforme {
   display: flex;
   flex-direction: column;
-  justify-content: right;
   height: 100vh;
+  /*overflow-y: hidden;*/
 }
 
 .uniforme > main {
   height: 100vh;
+  /*overflow-y: scroll;*/
 }
 
 .uniforme > footer {

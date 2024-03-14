@@ -16,4 +16,6 @@ function Index() {
     )
 }
 
+/*Una funcion que es componente se exporta para poder importarla en otros archivos
+en los que se requiera este componente */
 export default Index;

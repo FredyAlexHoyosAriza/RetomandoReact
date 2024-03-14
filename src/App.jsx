@@ -8,8 +8,8 @@ import {
     BrowserRouter as Router,
     Routes,
     Route,
-    Link
 } from "react-router-dom";
+
 import Layout from './layouts/Layout';
 
 export default function App() {
@@ -26,6 +26,7 @@ export default function App() {
             se muestra segun el route actual. Este concepto se conoce como: single page
             application */}
             <div>
+                {/*
                 <nav>
                     <ul>
                         <li>
@@ -38,21 +39,22 @@ export default function App() {
                             <Link to="/border_collie">Border Collie</Link>
                         </li>
                     </ul>
-                </nav>
+                </nav> */}
                 {/*Todas las rutas con este mismo Layout se factorizan asi;
                 dependiendo de la ruta actual se muestra la pagina correspondiente
                 siempre, pero todas las paginas enmarcadas con el mismo Layout.
                 Layout no debe estar dentro de las etiquetas Routes ya que el
                 router dom podria haber ambiguedad en las rutas e interpretarse
-                que quiza deba aplicarse mas de una ruta a la vez */}
-                <Layout>
-                    <Routes>
+                que quiza deba aplicarse mas de una ruta a la vez, o simplemente
+                no verse ninguna ruta ni Layout */}
+                <Routes>
+                    <Route element={<Layout />} >
                         <Route path="/border_collie" element={<BorderCollie />} />
                         <Route path="/pastor_belga" element={<PastorBelga />} />
                         {/*Por convencion la ruta raiz va ultima en Routes */}
                         <Route path="/" element={<Index />} />
-                    </Routes>
-                </Layout>
+                    </Route>
+                </Routes>
             </div>
         </Router>
     );
