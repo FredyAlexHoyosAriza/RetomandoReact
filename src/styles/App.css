@@ -165,4 +165,10 @@ body {
 
 .uniforme > footer {
   background-color: #1bb76e;
+  padding: 0.2em 0;
+  text-align: center;
+}
+
+.uniforme > main > h1 {
+  text-align: center;
 }

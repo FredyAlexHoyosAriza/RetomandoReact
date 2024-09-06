@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function DogBreedCard({ Breed, DogImg, DogImgAltMsg, likes1, comments, views }) {
+const DogBreedCard = ({ Breed, DogImg, DogImgAltMsg, likes1, comments, views }) => {
     let page;
     if (Breed === 'Pastor Belga Malinois') {
         page = '/pastor_belga';
@@ -10,7 +10,7 @@ function DogBreedCard({ Breed, DogImg, DogImgAltMsg, likes1, comments, views }) 
     return (
         <Link to={page}>
             <li className="breedCard">
-                <img className="imgSize" src={DogImg} alt={DogImgAltMsg} name={Breed} />
+                <img className="imgSize" src={DogImg} alt={'Imagen '+ Breed} name={Breed} />
                 <div>
                     <label>{Breed}</label>
                     <ul className="interaction">

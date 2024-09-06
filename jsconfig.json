@@ -7,5 +7,3 @@
   },
   "include": ["src"]
 }
-
-// Para probar este archivo se debe reiniciar el servidor y quizá instalar: yarn add react-scripts@latest
