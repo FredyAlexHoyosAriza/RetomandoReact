@@ -1,6 +1,6 @@
-import DogBreedCard from "../components/DogBreedCard";
-import borderCollie from "../media/Border_Collie.jpg"
-import pastorBelgaMalinois from "../media/pastor-belga-malinois_530_0_600.jpg"
+import DogBreedCard from "components/DogBreedCard";
+import borderCollie from "media/Border_Collie.jpg"
+import pastorBelgaMalinois from "media/pastor-belga-malinois_530_0_600.jpg"
 
 function Index() {
     return (
